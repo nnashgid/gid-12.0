@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'SovMod';
+  src: url('../assets/fonts/SovMod.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KudryWeird';
+  src: url('../assets/fonts/kudry_weird-headline.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gropled';
+  src: url('../assets/fonts/Gropled-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Skifer';
+  src: url('../assets/fonts/MV-SKIFER.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --bg: #F5F4F0;
   --text: #1A1A1A;
@@ -20,7 +48,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'SovMod', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Gropled', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
