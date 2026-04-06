@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Экокарта Нижегородской области — ННаш гид</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">НН<span class="accent">аш</span> гид</a>
+      <div class="nav-links">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-secondary">Вход</button>
+        <a href="route-builder.html" class="btn btn-primary">Поехать →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Экокарта Нижегородской области</h1>
+          <p class="section-subtitle">Интерактивные метки на карте, фильтры по категориям и быстрая навигация по всем 10 ключевым экоместам.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container animate-on-scroll">
+      <div class="filter-buttons map-filter">
+        <button class="active" data-category="all">Все</button>
+        <button data-category="Заповедник">Заповедники</button>
+        <button data-category="Природный парк">Природные парки</button>
+        <button data-category="Заказник">Заказники</button>
+        <button data-category="Тропа">Тропы</button>
+        <button data-category="Пещеры">Пещеры</button>
+        <button data-category="Река">Реки</button>
+        <button data-category="Нацпарк">Нацпарки</button>
+      </div>
+      <div class="detail-grid">
+        <div class="map-frame" id="map-container"></div>
+        <aside class="sidebar">
+          <h3>Места на карте</h3>
+          <p>Нажми на любую точку или выбери место в списке, чтобы быстро перейти к локации.</p>
+          <div class="list-panel">
+            <ul id="places-list"></ul>
+          </div>
+          <p class="map-warning" style="color:#E8500A; margin-top:16px;"></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-logo">НН<span>аш</span> гид</div>
+        <p>Открываем заповедную природу Нижегородской области</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <p>© 2026 ННаш гид. Некоммерческий проект.</p>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/map.js"></script>
+</body>
+</html>

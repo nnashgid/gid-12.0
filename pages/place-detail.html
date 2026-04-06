@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Место — ННаш гид</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">НН<span class="accent">аш</span> гид</a>
+      <div class="nav-links">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-secondary">Вход</button>
+        <a href="route-builder.html" class="btn btn-primary">Поехать →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="animate-on-scroll">
+      <div class="container">
+        <div class="breadcrumbs" id="breadcrumbs"></div>
+        <h1 class="section-title" id="place-title">Место</h1>
+        <p class="badge" id="place-category">Категория</p>
+      </div>
+    </section>
+
+    <section class="container animate-on-scroll">
+      <div class="detail-grid">
+        <div>
+          <img id="place-photo" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80&fit=crop" alt="Место" style="border-radius:32px; width:100%; height:auto; margin-bottom:24px;">
+          <div class="info-panel">
+            <h2>Описание</h2>
+            <div id="place-description"></div>
+          </div>
+          <div class="info-panel" style="margin-top:24px;">
+            <h2>Как добраться</h2>
+            <p id="place-travel"></p>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="info-panel">
+            <h3>Что взять с собой</h3>
+            <div id="place-gear"></div>
+          </div>
+          <div class="info-panel" style="margin-top:24px;">
+            <h3>Местная карта</h3>
+            <div id="place-map" class="map-frame"></div>
+          </div>
+          <div class="info-panel" style="margin-top:24px;">
+            <h3>Похожие места</h3>
+            <ul id="place-similar"></ul>
+          </div>
+          <button class="btn btn-primary" style="width:100%; margin-top:24px;">Добавить в маршрут</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-logo">НН<span>аш</span> гид</div>
+        <p>Открываем заповедную природу Нижегородской области</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <p>© 2026 ННаш гид. Некоммерческий проект.</p>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/place-detail.js"></script>
+</body>
+</html>

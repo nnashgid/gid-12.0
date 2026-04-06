@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>События — ННаш гид</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">НН<span class="accent">аш</span> гид</a>
+      <div class="nav-links">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-secondary">Вход</button>
+        <a href="route-builder.html" class="btn btn-primary">Поехать →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Ближайшие экособытия</h1>
+          <p class="section-subtitle">Экскурсии, сплавы, фестивали и мастер-классы — выбери подходящее событие и запланируй поездку.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container animate-on-scroll">
+      <div class="filter-buttons">
+        <button class="active">Все</button>
+        <button>Экскурсии</button>
+        <button>Сплавы</button>
+        <button>Фестивали</button>
+        <button>Мастер-классы</button>
+      </div>
+      <div class="events-grid">
+        <article class="event-card">
+          <div style="display:flex; align-items:center; gap:18px; margin-bottom:20px;">
+            <div style="width:68px; height:68px; border-radius:24px; background:#E8500A; color:#fff; display:grid; place-content:center; font-size:1.3rem; font-weight:700;">01<br>июн</div>
+            <div>
+              <h3>Экскурсия в Керженский заповедник</h3>
+              <p class="meta-label">Гид Николай В.</p>
+            </div>
+          </div>
+          <p>Тройка троп, история заповедника и тихие берега лесного озера. Запись откроется 1 июня 2026.</p>
+          <p class="meta-label">Борский округ — бесплатно</p>
+          <button class="btn btn-primary" style="margin-top:18px;">Записаться</button>
+        </article>
+        <article class="event-card">
+          <div style="display:flex; align-items:center; gap:18px; margin-bottom:20px;">
+            <div style="width:68px; height:68px; border-radius:24px; background:#E8500A; color:#fff; display:grid; place-content:center; font-size:1.3rem; font-weight:700;">10<br>июн</div>
+            <div>
+              <h3>Сплав по Ветлуге для начинающих</h3>
+              <p class="meta-label">Организатор EcoRiver</p>
+            </div>
+          </div>
+          <p>Двухдневный маршрут с ночёвкой у реки, ужин на открытом огне и безопасный маршрут для новичков.</p>
+          <p class="meta-label">Воскресенский район — от 2500 ₽</p>
+          <button class="btn btn-primary" style="margin-top:18px;">Записаться</button>
+        </article>
+        <article class="event-card">
+          <div style="display:flex; align-items:center; gap:18px; margin-bottom:20px;">
+            <div style="width:68px; height:68px; border-radius:24px; background:#E8500A; color:#fff; display:grid; place-content:center; font-size:1.3rem; font-weight:700;">18<br>июн</div>
+            <div>
+              <h3>Фестиваль «Лесное дыхание»</h3>
+              <p class="meta-label">Минтуризма НО</p>
+            </div>
+          </div>
+          <p>Экологический фестиваль на лугу с лекциями, мастер-классами и прогулками в формате zero waste.</p>
+          <p class="meta-label">Север области — вход по регистрации</p>
+          <button class="btn btn-primary" style="margin-top:18px;">Записаться</button>
+        </article>
+        <article class="event-card">
+          <div style="display:flex; align-items:center; gap:18px; margin-bottom:20px;">
+            <div style="width:68px; height:68px; border-radius:24px; background:#E8500A; color:#fff; display:grid; place-content:center; font-size:1.3rem; font-weight:700;">25<br>июн</div>
+            <div>
+              <h3>Мастер-класс по ночной фотографии</h3>
+              <p class="meta-label">Фотошкола «Лесное Свечение»</p>
+            </div>
+          </div>
+          <p>Уроки съёмки на природе, работа с фонарём и подготовка к ночным тропам среди деревьев.</p>
+          <p class="meta-label">Нижний Новгород — 1200 ₽</p>
+          <button class="btn btn-primary" style="margin-top:18px;">Записаться</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-logo">НН<span>аш</span> гид</div>
+        <p>Открываем заповедную природу Нижегородской области</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <p>© 2026 ННаш гид. Некоммерческий проект.</p>
+    </div>
+  </footer>
+
+  <script src="../js/animations.js"></script>
+  <script src="../js/filters.js"></script>
+</body>
+</html>

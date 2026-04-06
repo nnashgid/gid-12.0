@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Места — ННаш гид</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">НН<span class="accent">аш</span> гид</a>
+      <div class="nav-links">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-secondary">Вход</button>
+        <a href="route-builder.html" class="btn btn-primary">Поехать →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Места, которые стоит увидеть</h1>
+          <p class="section-subtitle">Собрали 10 самых атмосферных природных локаций Нижегородской области — от карстовых озёр до птичьих лугов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container animate-on-scroll">
+      <div class="filter-buttons map-filter">
+        <button class="active" data-category="all">Все</button>
+        <button data-category="Заповедник">Заповедники</button>
+        <button data-category="Река">Реки</button>
+        <button data-category="Озёра">Озёра</button>
+        <button data-category="Пещеры">Пещеры</button>
+        <button data-category="Тропа">Тропы</button>
+      </div>
+      <div class="place-grid">
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80&fit=crop" alt="Керженский заповедник">
+          <span class="badge">Заповедник</span>
+          <h3>Керженский заповедник</h3>
+          <p>Уникальные сосновые боры, болота и реки. Турпоток вырос в 2 раза за 4 года. Экскурсии с официальными гидами.</p>
+          <p class="meta-label">Борский округ</p>
+          <a href="place-detail.html?id=kerzhenskiy" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Воскресенское Поветлужье">
+          <span class="badge">Природный парк</span>
+          <h3>Природный парк «Воскресенское Поветлужье»</h3>
+          <p>Экотропы вдоль Ветлуги, байдарочные сплавы, нетронутая пойменная природа.</p>
+          <p class="meta-label">Воскресенский район</p>
+          <a href="place-detail.html?id=vosp" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80&fit=crop" alt="Пустынский заказник">
+          <span class="badge">Заказник / Озёра</span>
+          <h3>Пустынский заказник</h3>
+          <p>Глубокие карстовые озёра Великое и Святое, реликтовые леса. Часть нацпарка «Нижегородское Поволжье».</p>
+          <p class="meta-label">Арзамасский округ</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80&fit=crop" alt="Артемовские луга">
+          <span class="badge">Луга / Птицы</span>
+          <h3>Артемовские луга</h3>
+          <p>Волжская пойма, более 80% птиц региона, рыбалка, кемпинг. Идеально для орнитологов.</p>
+          <p class="meta-label">Кстово</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80&fit=crop" alt="Эко-тропа Нижний-800">
+          <span class="badge">Тропа</span>
+          <h3>Эко-тропа «Нижний-800»</h3>
+          <p>16 км пешком или на велосипеде по живописным местам Нижнего. Подходит для начинающих.</p>
+          <p class="meta-label">Нижний Новгород</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80&fit=crop" alt="Ичалковские пещеры">
+          <span class="badge">Пещеры</span>
+          <h3>Ичалковские пещеры</h3>
+          <p>Подземные озёра, спелеотуризм, карстовые гроты. Кластер нацпарка «Нижегородское Поволжье».</p>
+          <p class="meta-label">Ичалковский бор, р. Пьяна</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Река Ветлуга">
+          <span class="badge">Реки</span>
+          <h3>Река Ветлуга</h3>
+          <p>Чистейшие пляжи, многодневные сплавы, рыбалка. Агротуризм на берегах.</p>
+          <p class="meta-label">Воскресенский район</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&fit=crop" alt="Моховые горы">
+          <span class="badge">Живописные ландшафты</span>
+          <h3>Моховые горы</h3>
+          <p>Редкие растения, возвышенности с видами, расширение троп запланировано на 2026 г.</p>
+          <p class="meta-label">Север области</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80&fit=crop" alt="Нацпарк Нижегородское Поволжье">
+          <span class="badge">Нацпарк</span>
+          <h3>Национальный парк «Нижегородское Поволжье»</h3>
+          <p>Создан в 2025 г. 4 новые экотропы, 200 редких видов животных. Планируется рекреационная инфраструктура.</p>
+          <p class="meta-label">Нижегородская область</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+        <article class="place-card">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80&fit=crop" alt="Зелёный город">
+          <span class="badge">Лес / Отдых</span>
+          <h3>Зелёный город</h3>
+          <p>Хвойные леса у Волги, проекты экоотелей, кислородный туризм рядом с мегаполисом.</p>
+          <p class="meta-label">30 мин от НН</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-logo">НН<span>аш</span> гид</div>
+        <p>Открываем заповедную природу Нижегородской области</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <p>© 2026 ННаш гид. Некоммерческий проект.</p>
+    </div>
+  </footer>
+
+  <script src="../js/animations.js"></script>
+  <script src="../js/filters.js"></script>
+</body>
+</html>

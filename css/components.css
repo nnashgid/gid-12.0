@@ -1,0 +1,256 @@
+.content-grid,
+.filter-row,
+.route-grid,
+.route-list,
+.detail-grid,
+.team-grid,
+.stats-grid,
+.cards-row,
+.partners-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.filter-row {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.route-grid,
+.cards-row,
+.partners-grid,
+.team-grid,
+.stats-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .route-grid,
+  .cards-row,
+  .partners-grid,
+  .team-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-list li {
+  background: var(--card-bg);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: rgba(232, 80, 10, 0.12);
+  color: var(--accent-orange);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: 'Gropled', system-ui, sans-serif;
+  font-size: clamp(2rem, 2.6vw, 3rem);
+  margin: 0 0 18px;
+}
+
+.section-subtitle {
+  max-width: 680px;
+  color: #4D4D4D;
+}
+
+.form-card,
+.map-card,
+.info-panel,
+.detail-card,
+.event-card,
+.partner-card,
+.team-card {
+  background: var(--card-bg);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 14px;
+  color: #353535;
+  font-weight: 700;
+}
+
+.form-card select,
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  border: 1px solid #E0DED9;
+  border-radius: 18px;
+  padding: 16px;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #F7F5F1;
+  border-radius: 18px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin: 0;
+}
+
+.detail-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+  color: #6D6D6D;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.breadcrumbs span {
+  color: #6D6D6D;
+}
+
+.section-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.section-split .info-panel {
+  min-height: 100%;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stats-grid .feature-card {
+  text-align: center;
+}
+
+.stats-grid .feature-card h3 {
+  font-size: 2.5rem;
+  margin: 0 0 12px;
+}
+
+.text-highlight {
+  color: var(--accent-orange);
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.meta-label {
+  color: #6D6D6D;
+  font-size: 0.95rem;
+}
+
+.map-frame,
+.list-panel,
+.sidebar {
+  background: var(--card-bg);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.map-frame {
+  min-height: 520px;
+}
+
+.sidebar {
+  padding: 24px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  font-family: 'Gropled', system-ui, sans-serif;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  border-bottom: 1px solid #F1EFEA;
+  padding: 18px 0;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+}
+
+.sidebar button {
+  border: none;
+  background: none;
+  color: var(--accent-green);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filter-buttons button {
+  border: 1px solid #E0DED9;
+  background: #fff;
+  border-radius: 999px;
+  padding: 12px 18px;
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: var(--accent-orange);
+  color: #fff;
+  border-color: transparent;
+}
+
+@media (max-width: 900px) {
+  .detail-grid,
+  .section-split,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

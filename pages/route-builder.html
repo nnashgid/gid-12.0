@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создай свой маршрут — ННаш гид</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">НН<span class="accent">аш</span> гид</a>
+      <div class="nav-links">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-secondary">Вход</button>
+        <a href="route-builder.html" class="btn btn-primary">Поехать →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Создай свой маршрут</h1>
+          <p class="section-subtitle">Заполни короткий опросник, и AI предложит красивый маршрут с реальными местами Нижегородской области.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container animate-on-scroll">
+      <div class="detail-grid">
+        <div class="form-card">
+          <form id="route-form">
+            <label>Сколько дней?</label>
+            <select name="days" required>
+              <option value="1">1</option>
+              <option value="2–3">2–3</option>
+              <option value="неделя">неделя</option>
+            </select>
+
+            <label>Откуда стартуете?</label>
+            <select name="start" required>
+              <option value="Нижний Новгород">Нижний Новгород</option>
+              <option value="другой город">другой город</option>
+            </select>
+
+            <label>Тип активности</label>
+            <select name="activity" required>
+              <option value="пеший">пеший</option>
+              <option value="велосипед">велосипед</option>
+              <option value="байдарки">байдарки</option>
+              <option value="авто">авто</option>
+            </select>
+
+            <label>Интересы</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="interests" value="леса"> леса</label>
+              <label><input type="checkbox" name="interests" value="озёра"> озёра</label>
+              <label><input type="checkbox" name="interests" value="пещеры"> пещеры</label>
+              <label><input type="checkbox" name="interests" value="птицы"> птицы</label>
+              <label><input type="checkbox" name="interests" value="история"> история</label>
+              <label><input type="checkbox" name="interests" value="фотография"> фотография</label>
+            </div>
+
+            <label>Уровень подготовки</label>
+            <select name="level" required>
+              <option value="начинающий">начинающий</option>
+              <option value="опытный">опытный</option>
+              <option value="профессионал">профессионал</option>
+            </select>
+
+            <label>С кем едете</label>
+            <select name="group" required>
+              <option value="один">один</option>
+              <option value="пара">пара</option>
+              <option value="семья с детьми">семья с детьми</option>
+              <option value="группа">группа</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">Составить маршрут →</button>
+          </form>
+          <p id="route-status" style="margin-top:18px; color:#4D4D4D;"></p>
+        </div>
+
+        <div class="info-panel">
+          <h2>Результат</h2>
+          <p>После заполнения формы здесь появится живой маршрут с советами по снаряжению и остановкой в реальных местах.</p>
+          <div id="route-result"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-logo">НН<span>аш</span> гид</div>
+        <p>Открываем заповедную природу Нижегородской области</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="routes.html">Маршруты</a>
+        <a href="places.html">Места</a>
+        <a href="map.html">Карта</a>
+        <a href="blog.html">Блог</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <p>© 2026 ННаш гид. Некоммерческий проект.</p>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/route-builder.js"></script>
+</body>
+</html>
