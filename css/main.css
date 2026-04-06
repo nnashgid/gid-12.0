@@ -1,11 +1,4 @@
 @font-face {
-  font-family: 'SovMod';
-  src: url('../assets/fonts/SovMod.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'KudryWeird';
   src: url('../assets/fonts/kudry_weird-headline.otf') format('opentype');
   font-weight: 400;
@@ -16,13 +9,6 @@
   font-family: 'Gropled';
   src: url('../assets/fonts/Gropled-Bold.otf') format('opentype');
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Skifer';
-  src: url('../assets/fonts/MV-SKIFER.otf') format('opentype');
-  font-weight: 400;
   font-style: normal;
 }
 
